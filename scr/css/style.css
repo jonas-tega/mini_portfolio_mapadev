@@ -1,0 +1,146 @@
+body{
+    min-height: 100vh;
+    padding: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+    background-image: url(../images/backgroung.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'VT323', monospace;
+    font-size: 18px;
+    color: #f3f3f3; 
+}
+
+.card{
+    background-color: #070d12;
+    width: 370px;
+    border: 2px solid #e126d9;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card .my_information{
+    padding-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; /*alinha horizontalmente por causa do flex direction column*/
+    flex-direction: column; 
+    gap: 10px;
+}
+
+.card .my_information img{
+    width: 96px;
+    height: 96px;
+    border-radius: 50px;
+    border: 4px solid #02d08f;
+}
+
+.card .my_information .name{
+    font-size: 26px;
+}
+
+.card .my_information .office{
+    font-size: 20px;
+    color: #b8bbc5;
+}
+
+.card .content{
+    margin-top: 15px;
+}
+
+.card .tabs{
+    display: flex;
+}
+
+.card .tabs img{
+    width: 30px;
+}
+
+.card .tabs .tab{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.card .tabs .tab.selected{
+    background-color: #262626;
+}
+
+.card .info_tabs{
+    background-color: #262626;
+}
+
+.card .tabs .tab:hover{
+    background-color: #414141;
+}
+
+.info_tabs .information{
+    min-height: 260px;
+    padding: 15px;
+    display: none;
+}
+
+.info_tabs .information.selected{
+    display: block;
+}
+
+.info_tabs .subtitle{
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.info_tabs .description{
+    font-size: 20px;
+    max-height: 180px;
+    overflow-y: auto;
+    padding-right: 15PX;
+}
+
+.info_tabs .description span{
+    color: #02D08F;
+}
+
+.social_medias{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.social_medias li a{
+    width: 250px;
+    display: block;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.social_medias li a:hover{
+    opacity: 0.8;
+}
+
+.social_medias .resume{
+    background-color: #06c185;
+}
+
+.social_medias .linkedin{
+    background-color: #1d87bd;
+}
+
+.social_medias .github{
+    background-color: #545454
+}
